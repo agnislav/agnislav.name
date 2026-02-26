@@ -1,0 +1,41 @@
+---
+title: 'Eliminating Bus Factors: Building Teams That Don''t Need You'
+date: '2026-01-20'
+excerpt: >-
+  The processes, documentation habits, and cultural shifts that turned my team
+  self-sufficient.
+---
+
+The best compliment I ever received as a team lead was: "We shipped the release while you were on vacation and nothing broke." That's not an accident. It's the result of deliberate process design.
+
+## What a bus factor really means
+
+A bus factor of 1 means your project dies if one person gets hit by a bus — or more realistically, takes a vacation, gets sick, or leaves the company. Most teams have bus factors they don't even recognize: one person who knows how the CI pipeline works, one person who understands the payment integration, one person who can deploy to production.
+
+## How I eliminated them
+
+At Visible Magic, I inherited a team where I was the bus factor for nearly everything. Here's what I changed:
+
+### 1. Documented every "tribal knowledge" process
+
+Not in a wiki that nobody reads. In the actual codebase — READMEs in each module directory, inline comments at decision points, and ADRs (Architecture Decision Records) for anything non-obvious.
+
+### 2. Rotated responsibilities deliberately
+
+Every sprint, a different team member owned the release process. Every quarter, we rotated who handled code reviews for which modules. This felt slower at first. Within six months, everyone could work on everything.
+
+### 3. Made pair programming the default for new domains
+
+When someone needed to work in unfamiliar code, they paired with whoever knew it best. Not as a teaching exercise — as a genuine collaboration where both people contributed. Knowledge transfer happened naturally.
+
+### 4. Built CI/CD that anyone could operate
+
+Our deployment pipeline had exactly three steps, each documented in a single paragraph. No special credentials needed beyond team-level access. No manual steps that required "knowing the trick."
+
+## The result
+
+After 18 months, I could step away for two weeks and the team didn't just survive — they shipped features, handled incidents, and made architectural decisions I agreed with. That's not a team that doesn't need leadership. It's a team where leadership has done its job.
+
+## Why this matters for engineering leaders
+
+If you're the smartest person in the room and the team can't function without you, you haven't built a team. You've built a dependency. The goal isn't to be indispensable — it's to be replaceable, so you can focus on the next challenge.

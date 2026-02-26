@@ -1,0 +1,24 @@
+---
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../../keystatic.config';
+import MarkdocLib from '@markdoc/markdoc';
+import BlogPost from '../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const reader = createReader(process.cwd(), keystaticConfig);
+  const posts = await reader.collections.blog.all();
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { entry: post.entry, slug: post.slug },
+  }));
+}
+
+const { entry, slug } = Astro.props;
+const { node } = await entry.content();
+const html = MarkdocLib.renderers.html(MarkdocLib.transform(node));
+---
+
+<BlogPost title={entry.title} date={entry.date} excerpt={entry.excerpt} slug={slug}>
+  <Fragment set:html={html} />
+</BlogPost>

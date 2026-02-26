@@ -1,0 +1,102 @@
+---
+const capabilities = [
+  {
+    title: 'Team Building &\nLeadership',
+    description: "Hired, mentored, and grown engineering teams from 3 to 15+ people. Performance management, engineering culture, and Agile process design. I build teams that become self-sufficient.",
+  },
+  {
+    title: 'Product Delivery',
+    description: "MVP-to-market execution under real constraints. Lean methodology, A/B testing for unit economics, consistent release cadence. I've shipped a product from zero to production in one month.",
+  },
+  {
+    title: 'Architecture &\nTechnical Strategy',
+    description: 'Full-stack architecture decisions across mobile, backend, and infrastructure. CI/CD pipelines, framework evaluation, and long-term technical roadmapping.',
+  },
+  {
+    title: 'Hands-on\nEngineering',
+    description: "I still ship production code. React Native, TypeScript, Node.js, blockchain/Web3. I refactored the most critical wallet flows myself — twice — because some things need senior hands.",
+  },
+  {
+    title: 'Process &\nAutomation',
+    description: 'CI/CD pipelines, AI-assisted development workflows, automated E2E testing strategies. I reduce operational overhead so teams can focus on what matters.',
+  },
+  {
+    title: 'Cross-cultural\nCollaboration',
+    description: 'Distributed teams across 4+ countries. Stakeholder communication, pre-sales technical consulting, and bridging the gap between business needs and engineering reality.',
+  },
+];
+---
+
+<section id="capabilities" aria-labelledby="capabilities-label">
+  <div class="container">
+    <p class="section-label" id="capabilities-label">What I Do</p>
+    <div class="cap-grid" role="list">
+      {capabilities.map((cap) => (
+        <div class="cap-cell" role="listitem">
+          <h3>{cap.title.split('\n').map((line, i) => i > 0 ? <><br />{line}</> : line)}</h3>
+          <p>{cap.description}</p>
+        </div>
+      ))}
+    </div>
+    <div class="tech-footnote">
+      <span class="label">Tech Stack</span>
+      <p>TypeScript, JavaScript, React Native, React, Node.js, Python, Rust, Angular, Redux, Zustand, Jotai, Blockchain/EVM/Solana, Solidity, AWS, Docker, Kubernetes, Git, CI/CD, GitHub Actions, AI-assisted development (Claude Code, Cursor).</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .cap-cell {
+    background: var(--card-bg);
+    padding: 40px 32px;
+    transition: background-color 0.2s;
+  }
+
+  .cap-cell h3 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .cap-cell p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .tech-footnote {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .tech-footnote .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .tech-footnote p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .cap-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const allPosts = await reader.collections.blog.all();
+const posts = allPosts
+  .sort((a, b) => {
+    const dateA = a.entry.date ? new Date(a.entry.date).getTime() : 0;
+    const dateB = b.entry.date ? new Date(b.entry.date).getTime() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 4);
+
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return '';
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+}
+---
+
+<section id="blog" aria-labelledby="blog-label">
+  <div class="container">
+    <p class="section-label" id="blog-label">Writing</p>
+    <div class="blog-grid">
+      {posts.map((post) => (
+        <article class="blog-card">
+          <div class="blog-date">{formatDate(post.entry.date)}</div>
+          <h3>
+            <a href={`/blog/${post.slug}`}>{post.entry.title}</a>
+          </h3>
+          <p>{post.entry.excerpt}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .blog-card {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .blog-date {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .blog-card h3 {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .blog-card h3 a {
+    color: var(--fg);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .blog-card h3 a:hover {
+    color: var(--accent);
+  }
+
+  .blog-card p {
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

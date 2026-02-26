@@ -1,0 +1,45 @@
+---
+title: AI-Assisted Development in Practice
+date: '2025-12-10'
+excerpt: >-
+  How I introduced Claude Code to an engineering team and what actually changed
+  in our delivery speed.
+---
+
+Everyone's talking about AI in software development. Most of the conversation is either hype ("10x productivity!") or skepticism ("it just writes bugs faster"). After six months of using Claude Code as our primary AI development tool, I can share what actually happened.
+
+## How we started
+
+I didn't mandate AI tool adoption. I started using Claude Code myself for a refactoring project — rewriting the send flow in our crypto wallet. The results were visible: I completed a two-week estimate in five days, with cleaner code than the original.
+
+That got attention. Team members asked what I was using. I showed them, helped them set it up, and let adoption happen naturally.
+
+## What changed
+
+### Code review quality went up
+
+This surprised me. When developers use AI to generate initial implementations, they spend more time in review mode — reading, questioning, and refining code. The AI handles the boilerplate; humans focus on logic and architecture. Our code review comments became more substantive.
+
+### Onboarding to unfamiliar code got faster
+
+New team members could ask Claude Code to explain a module, generate examples of how functions are used, and get context without interrupting senior developers. This reduced the "ramp-up tax" significantly.
+
+### Test coverage increased
+
+Writing tests is the task developers most commonly skip under time pressure. With AI assistance, test generation became fast enough that skipping it felt wasteful. Our coverage went from around 45% to 72% in three months — without any coverage mandates.
+
+### Estimation patterns shifted
+
+Tasks that used to take 3-5 days now often took 1-2 days. But complex architectural decisions took the same amount of time. AI accelerates the known; it doesn't shortcut the unknown.
+
+## What didn't change
+
+- **Architecture decisions** still require human judgment. AI can implement a pattern, but choosing the right pattern for your constraints is still a human skill.
+- **Code ownership** still matters. Just because AI wrote it doesn't mean nobody owns it. Every line goes through the same review process.
+- **Debugging complex issues** is still mostly manual. AI helps with hypothesis generation, but reproducing and fixing subtle bugs still requires deep understanding.
+
+## The honest assessment
+
+AI-assisted development gave us roughly a 30-40% throughput increase on implementation tasks. That's meaningful but not transformative. The real value was in quality improvements — better tests, better documentation, faster onboarding — that compound over time.
+
+If you're an engineering leader considering AI tools for your team, start with yourself. Use them daily for a month. Then share what works. Organic adoption beats mandated adoption every time.

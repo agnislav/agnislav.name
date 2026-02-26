@@ -1,0 +1,135 @@
+---
+const jobs = [
+  {
+    date: '2025 — 2026',
+    title: 'Senior Software Engineer',
+    company: 'Noxtton LLC',
+    headline: 'Owned the most critical flows in a crypto wallet app and introduced AI-driven development to the team.',
+    description: "One of two leading technical contributors on a crypto wallet for a major media platform. Fully refactored the send and swap modules twice across product versions, reducing dependencies and improving UX. Evaluated and selected Maestro for E2E testing, including implementing Passkey authentication flow testing. Introduced Claude Code as the team's primary AI-assisted development tool, driving measurable delivery gains.",
+  },
+  {
+    date: '2022 — 2025',
+    title: 'React Native Team Lead',
+    company: 'Visible Magic',
+    headline: 'Built a self-sufficient team that ships without me — and shaped the product architecture end to end.',
+    description: 'Led a 5-person team building a high-performance mobile app on iOS and Android. Established delivery processes that eliminated bus factors and grew team maturity to near-full autonomy. Shaped product architecture including backend systems and CI/CD. Also performed Engineering Manager duties: performance reviews, engineering practices, company values, and pre-sales consulting.',
+  },
+  {
+    date: '2021 — 2022',
+    title: 'Frontend Development Lead',
+    company: 'SocialTech',
+    headline: 'Took a product from zero to production in 1 month, then optimized unit economics in 3.',
+    description: 'Led a 3-person team to deliver a fully functional MVP within one month using Lean development principles. Post-launch, implemented rigorous A/B testing that dialed in the product\'s unit economics within three months. Mentored freelance developers for seamless integration.',
+  },
+  {
+    date: '2020 — 2021',
+    title: 'Software Engineer',
+    company: 'Bizy',
+    headline: 'Took over mobile development solo, launched the app, and built a cross-platform design system.',
+    description: 'Full ownership of the React Native mobile app from mid-development to successful launch. Created a comprehensive design system in collaboration with an external UX team, ensuring consistency across web and mobile. Shared business logic and theming across platforms.',
+  },
+  {
+    date: '2019 — 2020',
+    title: 'Development Team Lead',
+    company: 'Be.Live',
+    headline: 'Led a 4-person team building a real-time multi-participant streaming platform.',
+    description: 'Managed a team developing a web-based streaming service supporting up to 4 simultaneous live participants using React.js, WebRTC, and Firebase. Improved product performance and stability, refined SCRUM practices for consistent delivery.',
+  },
+  {
+    date: '2015 — 2018',
+    title: 'Senior Dev → Tech Lead → Solutions Lead',
+    company: 'Thomas Cook',
+    headline: "Three promotions in three years. Shaped the multi-market platform's frontend architecture.",
+    description: 'Led technical strategy for a multi-market, multi-language travel platform with mobile-first approach. Drove cross-team frontend collaboration, partnered with business and product owners to translate ideas into roadmaps, and championed engineering culture through presentations and knowledge sharing.',
+  },
+];
+---
+
+<section id="experience" aria-labelledby="experience-label">
+  <div class="container">
+    <p class="section-label" id="experience-label">Track Record</p>
+    <div class="exp-list">
+      {jobs.map((job) => (
+        <article class="exp-item">
+          <div class="exp-date">{job.date}</div>
+          <div class="exp-content">
+            <h3>{job.title}</h3>
+            <div class="exp-company">{job.company}</div>
+            <div class="exp-headline">{job.headline}</div>
+            <p>{job.description}</p>
+          </div>
+        </article>
+      ))}
+      <div class="exp-earlier">
+        <strong>Earlier career (2006–2014):</strong> Development Team Lead at Astound Commerce (managed 15+ engineers, built reference applications for e-commerce), JavaScript Tech Lead at SmartBear Software, Demandware Developer at R3 Systems Group, and systems engineering at PortaOne and PrivatBank.
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .exp-list {
+    border-top: 1px solid var(--border);
+  }
+
+  .exp-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .exp-date {
+    font-size: 0.82rem;
+    color: var(--muted);
+    padding-top: 6px;
+  }
+
+  .exp-content h3 {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+
+  .exp-company {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .exp-headline {
+    font-size: 0.95rem;
+    color: var(--fg);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+
+  .exp-content p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    max-width: 540px;
+    line-height: 1.65;
+  }
+
+  .exp-earlier {
+    padding: 32px 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+
+  .exp-earlier :global(strong) {
+    font-weight: 400;
+    color: var(--fg);
+  }
+
+  @media (max-width: 768px) {
+    .exp-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+</style>

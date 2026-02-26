@@ -1,0 +1,62 @@
+---
+title: 'MVP in a Month: Lean Engineering at SocialTech'
+date: '2025-11-05'
+excerpt: >-
+  What it takes to go from zero to production in 30 days — scope, process, and
+  the trade-offs nobody talks about.
+---
+
+At SocialTech, we went from an empty repository to a live product with paying users in exactly 30 days. Here's how — and more importantly, here's what we sacrificed to make it happen.
+
+## The setup
+
+Three engineers. One product manager. A clear business hypothesis that needed validation before runway got shorter. The question wasn't "can we build this?" — it was "can we build enough of this to learn whether anyone wants it?"
+
+## Scope is everything
+
+The most important decision happened before we wrote a single line of code: we defined what "done" meant. Not a feature list — a learning goal. We needed to answer: "Will users complete the core workflow, and at what conversion rate?"
+
+Everything that didn't directly serve that question got cut. No admin panel. No email notifications. No password reset flow (we used magic links). No mobile responsiveness beyond "doesn't break."
+
+## The daily rhythm
+
+We ran one-day sprints. Every morning: what did you ship yesterday, what are you shipping today, what's blocking you. Every evening: deploy to production. Not staging — production.
+
+This sounds reckless. It wasn't. We had:
+
+- Feature flags for everything user-facing
+- A simple health check that would auto-rollback if error rates spiked
+- Exactly one integration test for the critical path
+
+That's it. No comprehensive test suite. No code review process beyond "show me the PR and I'll merge it in 5 minutes." Speed was the priority, and we were explicit about what we were trading away.
+
+## The trade-offs nobody talks about
+
+### Technical debt was the plan
+
+We wrote code we knew we'd rewrite. Database schemas we knew were wrong. API contracts we knew would change. This is fine — if you're honest about it. The problem isn't technical debt. The problem is technical debt you don't acknowledge.
+
+### Three engineers, zero specialists
+
+Everyone worked on everything. Frontend, backend, infrastructure. This only works with senior generalists who can context-switch without losing a day to ramp-up. If your team has junior developers, this approach doesn't scale.
+
+### Product decisions were engineering decisions
+
+When the PM wanted a feature that would take three days, the engineering answer wasn't "let me estimate." It was "here's what we can build in four hours that tests the same hypothesis." Sometimes the PM pushed back. Usually, the simpler version was good enough.
+
+## The result
+
+We launched on day 30. Within two weeks, we had enough data to validate the core hypothesis. Within three months, we had optimized unit economics through A/B testing to the point where the business model worked.
+
+The MVP code? We rewrote about 60% of it over the next six months. But the product decisions we validated in that first month saved us from building the wrong thing for six months. That's the real ROI of speed.
+
+## When this approach works
+
+This isn't universally applicable. It works when:
+
+- You have a clear hypothesis to validate
+- Your team is small and senior
+- You have genuine time pressure (not artificial urgency)
+- You're honest about what you're trading away
+
+If any of those conditions aren't met, slow down. A month of building the wrong thing fast is worse than two months of building the right thing carefully.

@@ -1,0 +1,33 @@
+---
+title: Why I Chose Maestro Over Detox and Appium
+date: '2026-02-15'
+excerpt: >-
+  Technical decision-making under real constraints — evaluating E2E testing
+  frameworks for a crypto wallet with unusual limitations.
+---
+
+When we needed to add end-to-end testing to our crypto wallet app, the obvious choices were Detox and Appium. Both are battle-tested. Both have large communities. And neither worked for us.
+
+## The constraints were unusual
+
+Our app had a Passkey-based authentication flow — biometric prompts, system-level dialogs, the works. Detox runs inside the app process, which means it can't interact with system dialogs. Appium can, but its setup complexity and flaky WebDriver-based architecture made it a non-starter for a small team moving fast.
+
+We also needed something that didn't require deep native module integration. Our React Native setup was already complex enough with blockchain SDKs, and adding another native dependency felt risky.
+
+## Why Maestro stood out
+
+Maestro takes a fundamentally different approach. It runs outside the app entirely, controlling it through accessibility APIs and screen coordinates. This means:
+
+- **System dialogs are testable.** Passkey prompts, permission dialogs, biometric confirmations — all accessible.
+- **No native dependencies.** Install the CLI, write YAML test files, run them. That's it.
+- **Readable tests.** YAML-based test definitions that anyone on the team can understand, not just the person who wrote them.
+
+## The trade-offs
+
+Maestro isn't perfect. The YAML format is limiting for complex assertions. Test execution is slower than Detox because it operates at the UI level. And the ecosystem is younger — fewer Stack Overflow answers when you hit edge cases.
+
+But for our specific constraints — Passkey flows, small team, need for fast setup — it was the right call. We had our first E2E suite running in under a week, covering the critical send and swap flows that had previously been tested only manually.
+
+## The broader lesson
+
+Framework selection isn't about picking the "best" tool. It's about picking the right tool for your constraints. We evaluated three frameworks against our actual requirements, not against feature comparison charts. That's the kind of engineering decision-making that saves weeks down the line.
