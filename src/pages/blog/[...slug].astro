@@ -5,13 +5,15 @@ import MarkdocLib from '@markdoc/markdoc';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
-  const reader = createReader(process.cwd(), keystaticConfig);
-  const posts = await reader.collections.blog.all();
-
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { entry: post.entry, slug: post.slug },
-  }));
+  // Blog posts disabled for now
+  return [];
+  // const reader = createReader(process.cwd(), keystaticConfig);
+  // const posts = await reader.collections.blog.all();
+  //
+  // return posts.map((post) => ({
+  //   params: { slug: post.slug },
+  //   props: { entry: post.entry, slug: post.slug },
+  // }));
 }
 
 const { entry, slug } = Astro.props;
