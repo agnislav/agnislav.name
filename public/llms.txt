@@ -4,7 +4,7 @@
 
 ## About
 
-Hands-on engineering leader who has spent nearly two decades building software and building teams. Led organizations from 3 to 15+ engineers, shipped MVPs to production in under a month, and established delivery processes that eliminate bottlenecks and bus factors. Works across industries including crypto wallets, streaming platforms, travel marketplaces, and e-commerce in cross-cultural, distributed environments.
+Hands-on engineering leader who has spent nearly two decades building software and building teams. Led organizations from 3 to 40 engineers, shipped MVPs to production in under a month, and established delivery processes that eliminate bottlenecks and bus factors. Works across industries including crypto wallets, streaming platforms, travel marketplaces, and e-commerce in cross-cultural, distributed environments.
 
 ## Capabilities
 
@@ -21,9 +21,7 @@ Hands-on engineering leader who has spent nearly two decades building software a
 - Visible Magic — React Native Team Lead — Built self-sufficient 5-person team, shaped product architecture (2022–2025)
 - SocialTech — Frontend Development Lead — Zero to production MVP in 1 month, optimized unit economics (2021–2022)
 - Bizy — Software Engineer — Solo mobile development, launched app, built cross-platform design system (2020–2021)
-- Be.Live — Development Team Lead — Real-time multi-participant streaming platform (2019–2020)
-- Thomas Cook — Senior Dev to Solutions Lead — Three promotions in three years, multi-market platform (2015–2018)
-- Earlier: Astound Commerce, SmartBear Software, R3 Systems Group, PortaOne, PrivatBank (2006–2014)
+- Earlier: Be.Live (real-time streaming with WebRTC), Thomas Cook (three promotions, multi-market platform architecture), Astound Commerce, SmartBear Software, R3 Systems Group, PortaOne, PrivatBank (2006–2020)
 
 ## Contact
 

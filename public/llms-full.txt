@@ -4,7 +4,7 @@
 
 ## About
 
-I'm a hands-on engineering leader who's spent nearly two decades at the intersection of building software and building teams. I've led orgs from 3 to 15+ engineers, shipped MVPs to production in under a month, and established delivery processes that let teams operate without bottlenecks or bus factors.
+I'm a hands-on engineering leader who's spent nearly two decades at the intersection of building software and building teams. I've led orgs from 3 to 40 engineers, shipped MVPs to production in under a month, and established delivery processes that let teams operate without bottlenecks or bus factors.
 
 I'm not the kind of leader who stops writing code. I still refactor core modules, evaluate testing frameworks, and introduce tooling — like bringing AI-assisted development workflows to my teams. But my real impact is in translating business goals into engineering execution: architecture decisions, hiring, process design, and getting products to market.
 
@@ -15,7 +15,7 @@ Currently open to Head of Engineering, VP of Engineering, or CTO roles at produc
 ## Capabilities
 
 ### Team Building & Leadership
-Hired, mentored, and grown engineering teams from 3 to 15+ people. Performance management, engineering culture, and Agile process design. I build teams that become self-sufficient.
+Hired, mentored, and grown engineering orgs from 3 to 40 people. Performance management, engineering culture, and Agile process design. I build teams that become self-sufficient.
 
 ### Product Delivery
 MVP-to-market execution under real constraints. Lean methodology, A/B testing for unit economics, consistent release cadence. I've shipped a product from zero to production in one month.
@@ -49,14 +49,8 @@ Took a product from zero to production in 1 month, then optimized unit economics
 ### Software Engineer — Bizy (2020–2021)
 Took over mobile development solo, launched the app, and built a cross-platform design system. Full ownership of the React Native mobile app from mid-development to successful launch. Created a comprehensive design system in collaboration with an external UX team, ensuring consistency across web and mobile. Shared business logic and theming across platforms.
 
-### Development Team Lead — Be.Live (2019–2020)
-Led a 4-person team building a real-time multi-participant streaming platform. Managed a team developing a web-based streaming service supporting up to 4 simultaneous live participants using React.js, WebRTC, and Firebase. Improved product performance and stability, refined SCRUM practices for consistent delivery.
-
-### Senior Dev → Tech Lead → Solutions Lead — Thomas Cook (2015–2018)
-Three promotions in three years. Shaped the multi-market platform's frontend architecture. Led technical strategy for a multi-market, multi-language travel platform with mobile-first approach. Drove cross-team frontend collaboration, partnered with business and product owners to translate ideas into roadmaps, and championed engineering culture through presentations and knowledge sharing.
-
-### Earlier Career (2006–2014)
-Development Team Lead at Astound Commerce (managed 15+ engineers, built reference applications for e-commerce), JavaScript Tech Lead at SmartBear Software, Demandware Developer at R3 Systems Group, and systems engineering at PortaOne and PrivatBank.
+### Earlier Career (2006–2020)
+Development Team Lead at Be.Live (real-time multi-participant streaming with WebRTC, team of 4), Senior Dev → Tech Lead → Solutions Lead at Thomas Cook (three promotions in three years, shaped multi-market travel platform frontend architecture, cross-team collaboration), Development Team Lead at Astound Commerce (managed teams up to 20 engineers, built e-commerce reference applications), JavaScript Tech Lead at SmartBear Software, Demandware Developer at R3 Systems Group, and systems engineering at PortaOne and PrivatBank.
 
 ## Blog Posts
 

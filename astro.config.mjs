@@ -9,7 +9,7 @@ const isKeystatic = !!process.env.KEYSTATIC;
 
 export default defineConfig({
   site: 'https://agnislav.name',
-  output: isKeystatic ? 'hybrid' : 'static',
+  output: 'static',
   integrations: [
     react(),
     markdoc(),
