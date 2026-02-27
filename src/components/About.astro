@@ -1,0 +1,89 @@
+---
+---
+
+<section id="about" aria-labelledby="about-label">
+  <div class="container">
+    <p class="section-label" id="about-label">About</p>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="/photo.jpeg" alt="Photo of Agnislav Onufriichuk" width="280" height="340" />
+      </div>
+      <div class="about-text">
+        <h2>From code to<br />culture.</h2>
+        <p>I'm a hands-on engineering leader who's spent nearly two decades at the intersection of building software and building teams. I've led orgs from 3 to 40 engineers, <strong>shipped MVPs to production in under a month</strong>, and established delivery processes that let teams operate without bottlenecks or bus factors.</p>
+        <p>I'm not the kind of leader who stops writing code. I still refactor core modules, evaluate testing frameworks, and introduce tooling — like bringing <strong>AI-assisted development workflows</strong> to my teams. But my real impact is in <strong>translating business goals into engineering execution</strong>: architecture decisions, hiring, process design, and getting products to market.</p>
+        <p>I've done this across industries — crypto wallets, streaming platforms, travel marketplaces, and e-commerce — always in cross-cultural, distributed environments.</p>
+        <div class="about-open">
+          <p><strong>Currently open to Head of Engineering, VP of Engineering, or CTO roles</strong> preferably at product companies and startups where engineering leadership is a competitive advantage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 80px;
+  }
+
+  .about-photo {
+    width: 280px;
+    height: 340px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-text h2 {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  .about-text p {
+    color: var(--muted);
+    max-width: 520px;
+    margin-bottom: 16px;
+  }
+
+  .about-text p :global(strong) {
+    color: var(--fg);
+    font-weight: 400;
+  }
+
+  .about-open {
+    margin-top: 28px;
+    padding: 20px 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 2px;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+
+  .about-open p {
+    font-size: 0.92rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .about-photo {
+      width: 100%;
+      height: 200px;
+    }
+  }
+</style>

@@ -1,0 +1,63 @@
+---
+---
+
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <h2 id="contact-heading">Let's talk about your<br /><em>engineering challenges</em></h2>
+    <p>Open to CTO, VP of Engineering, and Head of Engineering roles at product companies and startups.</p>
+    <div class="contact-links">
+      <a href="mailto:agnislav@gmail.com" aria-label="Send email to Agnislav">Email</a>
+      <a href="https://github.com/AgnislavO" rel="noopener noreferrer" target="_blank" aria-label="Agnislav's GitHub profile">GitHub</a>
+      <a href="https://www.linkedin.com/in/agnislav" rel="noopener noreferrer" target="_blank" aria-label="Agnislav's LinkedIn profile">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  h2 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  section > .container > p {
+    color: var(--muted);
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .contact-links a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s, color 0.3s;
+  }
+
+  .contact-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+</style>

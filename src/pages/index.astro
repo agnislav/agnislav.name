@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Capabilities from '../components/Capabilities.astro';
+import Experience from '../components/Experience.astro';
+import BlogSection from '../components/BlogSection.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Agni — Engineering Leader & Builder';
+const description = 'Agnislav Onufriichuk — engineering leader with 18+ years building teams and shipping products across fintech, travel, e-commerce, and Web3. Open to CTO, VP of Engineering, and Head of Engineering roles.';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Agnislav Onufriichuk',
+    jobTitle: 'Engineering Leader',
+    description: 'Engineering leader with 18+ years of experience shipping software — from hands-on architecture to building teams and delivery processes that scale.',
+    url: 'https://agnislav.name',
+    sameAs: [
+      'https://github.com/AgnislavO',
+      'https://www.linkedin.com/in/agnislav',
+    ],
+    knowsAbout: [
+      'Engineering Leadership',
+      'Team Building',
+      'Product Delivery',
+      'Software Architecture',
+      'React Native',
+      'TypeScript',
+      'Node.js',
+      'AI-Assisted Development',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Granada',
+      addressCountry: 'Spain',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Agnislav Onufriichuk',
+    url: 'https://agnislav.name',
+    description: 'Personal website of Agnislav Onufriichuk — engineering leader with 18+ years building teams and shipping products.',
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <Nav />
+  <main id="main-content">
+    <Hero />
+    <About />
+    <Capabilities />
+    <Experience />
+    <!-- <BlogSection /> -->
+    <Contact />
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,74 @@
+# Agnislav Onufriichuk
+
+> Engineering leader with 18+ years of experience shipping software — from hands-on architecture to building teams and delivery processes that scale. Open to CTO, VP of Engineering, and Head of Engineering roles.
+
+## About
+
+I'm a hands-on engineering leader who's spent nearly two decades at the intersection of building software and building teams. I've led orgs from 3 to 40 engineers, shipped MVPs to production in under a month, and established delivery processes that let teams operate without bottlenecks or bus factors.
+
+I'm not the kind of leader who stops writing code. I still refactor core modules, evaluate testing frameworks, and introduce tooling — like bringing AI-assisted development workflows to my teams. But my real impact is in translating business goals into engineering execution: architecture decisions, hiring, process design, and getting products to market.
+
+I've done this across industries — crypto wallets, streaming platforms, travel marketplaces, and e-commerce — always in cross-cultural, distributed environments.
+
+Currently open to Head of Engineering, VP of Engineering, or CTO roles at product companies and startups where engineering leadership is a competitive advantage.
+
+## Capabilities
+
+### Team Building & Leadership
+Hired, mentored, and grown engineering orgs from 3 to 40 people. Performance management, engineering culture, and Agile process design. I build teams that become self-sufficient.
+
+### Product Delivery
+MVP-to-market execution under real constraints. Lean methodology, A/B testing for unit economics, consistent release cadence. I've shipped a product from zero to production in one month.
+
+### Architecture & Technical Strategy
+Full-stack architecture decisions across mobile, backend, and infrastructure. CI/CD pipelines, framework evaluation, and long-term technical roadmapping.
+
+### Hands-on Engineering
+I still ship production code. React Native, TypeScript, Node.js, blockchain/Web3. I refactored the most critical wallet flows myself — twice — because some things need senior hands.
+
+### Process & Automation
+CI/CD pipelines, AI-assisted development workflows, automated E2E testing strategies. I reduce operational overhead so teams can focus on what matters.
+
+### Cross-cultural Collaboration
+Distributed teams across 4+ countries. Stakeholder communication, pre-sales technical consulting, and bridging the gap between business needs and engineering reality.
+
+### Tech Stack
+TypeScript, JavaScript, React Native, React, Node.js, Python, Rust, Angular, Redux, Zustand, Jotai, Blockchain/EVM/Solana, Solidity, AWS, Docker, Kubernetes, Git, CI/CD, GitHub Actions, AI-assisted development (Claude Code, Cursor).
+
+## Experience
+
+### Senior Software Engineer — Noxtton LLC (2025–2026)
+Owned the most critical flows in a crypto wallet app and introduced AI-driven development to the team. One of two leading technical contributors on a crypto wallet for a major media platform. Fully refactored the send and swap modules twice across product versions, reducing dependencies and improving UX. Evaluated and selected Maestro for E2E testing, including implementing Passkey authentication flow testing. Introduced Claude Code as the team's primary AI-assisted development tool, driving measurable delivery gains.
+
+### React Native Team Lead — Visible Magic (2022–2025)
+Built a self-sufficient team that ships without me — and shaped the product architecture end to end. Led a 5-person team building a high-performance mobile app on iOS and Android. Established delivery processes that eliminated bus factors and grew team maturity to near-full autonomy. Shaped product architecture including backend systems and CI/CD. Also performed Engineering Manager duties: performance reviews, engineering practices, company values, and pre-sales consulting.
+
+### Frontend Development Lead — SocialTech (2021–2022)
+Took a product from zero to production in 1 month, then optimized unit economics in 3. Led a 3-person team to deliver a fully functional MVP within one month using Lean development principles. Post-launch, implemented rigorous A/B testing that dialed in the product's unit economics within three months. Mentored freelance developers for seamless integration.
+
+### Software Engineer — Bizy (2020–2021)
+Took over mobile development solo, launched the app, and built a cross-platform design system. Full ownership of the React Native mobile app from mid-development to successful launch. Created a comprehensive design system in collaboration with an external UX team, ensuring consistency across web and mobile. Shared business logic and theming across platforms.
+
+### Earlier Career (2006–2020)
+Development Team Lead at Be.Live (real-time multi-participant streaming with WebRTC, team of 4), Senior Dev → Tech Lead → Solutions Lead at Thomas Cook (three promotions in three years, shaped multi-market travel platform frontend architecture, cross-team collaboration), Development Team Lead at Astound Commerce (managed teams up to 20 engineers, built e-commerce reference applications), JavaScript Tech Lead at SmartBear Software, Demandware Developer at R3 Systems Group, and systems engineering at PortaOne and PrivatBank.
+
+## Blog Posts
+
+### Why I Chose Maestro Over Detox and Appium (February 2026)
+Technical decision-making under real constraints — evaluating E2E testing frameworks for a crypto wallet with unusual limitations. Covers the unique constraints of Passkey-based authentication, why Detox and Appium fell short, and how Maestro's approach of controlling apps through accessibility APIs made it the right choice.
+
+### Eliminating Bus Factors: Building Teams That Don't Need You (January 2026)
+The processes, documentation habits, and cultural shifts that turned a team self-sufficient. Covers documenting tribal knowledge in code, rotating responsibilities, pair programming for knowledge transfer, and building CI/CD that anyone can operate.
+
+### AI-Assisted Development in Practice (December 2025)
+How Claude Code was introduced to an engineering team and what actually changed in delivery speed. Covers organic adoption, improvements in code review quality, faster onboarding, increased test coverage, and an honest assessment of roughly 30-40% throughput increase on implementation tasks.
+
+### MVP in a Month: Lean Engineering at SocialTech (November 2025)
+What it takes to go from zero to production in 30 days. Covers scope definition around learning goals, one-day sprints with daily production deploys, intentional technical debt, and the trade-offs of building fast with a small senior team.
+
+## Contact
+
+- Email: agnislav@gmail.com
+- LinkedIn: https://www.linkedin.com/in/agnislav
+- GitHub: https://github.com/AgnislavO
+- Website: https://agnislav.name
