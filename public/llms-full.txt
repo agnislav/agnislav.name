@@ -69,6 +69,7 @@ What it takes to go from zero to production in 30 days. Covers scope definition 
 ## Contact
 
 - Email: agnislav@gmail.com
-- LinkedIn: https://www.linkedin.com/in/agnislav
-- GitHub: https://github.com/AgnislavO
+- LinkedIn: https://www.linkedin.com/in/agnislav-onufriichuk
+- GitHub: https://github.com/agnislav
+- Threads: https://www.threads.com/@agnislav
 - Website: https://agnislav.name
