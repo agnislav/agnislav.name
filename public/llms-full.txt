@@ -1,6 +1,6 @@
 # Agnislav Onufriichuk
 
-> Engineering leader with 18+ years of experience shipping software — from hands-on architecture to building teams and delivery processes that scale. Open to CTO, VP of Engineering, and Head of Engineering roles.
+> Engineering leader with 18+ years of experience shipping software — from hands-on architecture to building teams and delivery processes that scale.
 
 ## About
 
@@ -9,8 +9,6 @@ I'm a hands-on engineering leader who's spent nearly two decades at the intersec
 I'm not the kind of leader who stops writing code. I still refactor core modules, evaluate testing frameworks, and introduce tooling — like bringing AI-assisted development workflows to my teams. But my real impact is in translating business goals into engineering execution: architecture decisions, hiring, process design, and getting products to market.
 
 I've done this across industries — crypto wallets, streaming platforms, travel marketplaces, and e-commerce — always in cross-cultural, distributed environments.
-
-Currently open to Head of Engineering, VP of Engineering, or CTO roles at product companies and startups where engineering leadership is a competitive advantage.
 
 ## Capabilities
 
